@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/2225c51832.js" crossorigin="anonymous"></script>
+    <!-- CSS Styles -->
+    <style>
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+        nav a{
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 30px;
+        }
+.login-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 500px;
+  
+}
+
+.login-form input{
+    margin-top: 10px;
+    font-size: 1.5em;
+    padding: 5px 10px ;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form input[type="submit"]{
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    width: 90px;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.title{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+label{
+    color: #666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+#email{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+#psd{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.rmb{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rmm{
+    margin-top: 5px;
+}
+
+.psw{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    gap: 2px;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+          
+            <span>
+   <a href="">Home</a>
+            <a href="">Dashboard</a>
+            <a href="">Inventaroy</a>
+            </span>
+            <span>
+                 <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+           
+        </nav>
+    </header>
+    <section class="login-container">
+        
+          <form class="login-form">
+        <h2 class="title">Please Login</h2>
+                       <label>Email</label>
+       <input type="email" name="" id="email" placeholder="Your Email" required>
+               <label>Password</label>
+        <input type="password" name="" id="psd" placeholder="Your Password" required>
+        <div class="rmb"><input type="checkbox"  id="rmemberMe"><label class="rmm" >Remeber me</label></div>
+        
+        <div>
+            <input type="submit" value="Login">
+        </div>
+        <span class="psw">Forgotten  <a href="#"> password?</a></span>
+    </form>
+
+    </section>
+  
+</body>
+</html>
